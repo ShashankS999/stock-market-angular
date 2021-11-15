@@ -1,0 +1,49 @@
+<form [formGroup]="companyForm">
+
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+      <label for="turnover">Turnover</label>
+      <input id="turnover" type="number" formControlName="turnover">
+    </div>
+
+    <div>
+      <label for="ceo">CEO</label>
+      <input id="ceo" type="text" formControlName="ceo">
+    </div>
+
+    <div>
+      <label for="director">Board of Directors</label>
+      <input id="director" type="text" formControlName="director">
+    </div>
+
+    <div>
+      <label for="sector">Sector</label>
+      <input id="sector" type="text" formControlName="sector">
+    </div>
+
+    <div>
+      <label for="brief">Brief</label>
+      <input id="brief" type="text" formControlName="brief">
+    </div>
+
+    <div>
+      <label for="exchange">Stock Exchanges</label>
+      <input id="exchange" type="text" formControlName="exchange">
+    </div>
+
+    <div>
+      <button type="button" (click)="addCompany()">Add/Update</button>
+      <button type="button" (click)="deactivateCompany()">Deactivate</button>
+      <input type="reset">
+    </div>
+
+    <div>
+      <label for="excel">Import Data </label>
+      <input id="excel" type="file" (change)="onFileChange($event)">
+    </div>
+
+  </form>

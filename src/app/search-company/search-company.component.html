@@ -1,0 +1,15 @@
+<form [formGroup]="companyForm">
+
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+      <button type="button" (click)="searchCompany()">Search</button>
+      <input type="reset">
+    </div>
+
+</form>
+
+<div id="list"></div>

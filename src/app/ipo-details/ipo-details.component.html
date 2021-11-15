@@ -1,0 +1,28 @@
+<form [formGroup]="ipoForm">
+
+    <div>
+      <label for="name">Company Name</label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+      <label for="date">Date and Time</label>
+      <input id="date" type="date" formControlName="date">
+    </div>
+
+    <div>
+        <label for="price">Price per Share</label>
+        <input id="price" type="number" formControlName="price">
+    </div>
+
+    <div>
+        <label for="shares">Total Shares</label>
+        <input id="shares" type="number" formControlName="shares">
+    </div>
+
+    <div>
+      <button type="button" (click)="addIpo()">Add/Update</button>
+      <input type="reset">
+    </div>
+
+  </form>

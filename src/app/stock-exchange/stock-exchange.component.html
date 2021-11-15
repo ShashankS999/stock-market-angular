@@ -1,0 +1,22 @@
+<form [formGroup]="stockForm">
+
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+      <label for="brief">Brief</label>
+      <input id="brief" type="text" formControlName="brief">
+    </div>
+
+    <div>
+      <button type="button" (click)="addStockExchange()">Add Stock Exchange</button>
+      <input type="reset">
+    </div>
+
+    <button type="button" (click)="listStockExchange()">List Stock Exchange</button>   
+
+  </form>
+  <br>
+  <div id="list"></div>

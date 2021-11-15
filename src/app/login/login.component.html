@@ -1,0 +1,17 @@
+<form [formGroup]="loginForm">
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email">
+    </div>
+  
+    <div>
+      <label for="password">Password</label>
+      <input id="password" type="password" formControlName="password">
+    </div>
+    
+    <button (click)="login()" type="button">Login</button>
+    <button  type="button" routerLink="/sign-up">Sign-up</button>
+    <input type="reset">
+
+  </form>
